@@ -24,7 +24,6 @@ body {
 .navbar .logo span {
   color: var(--primary-color);
 }
-
 .navbar nav {
   display: none;
 }
@@ -34,4 +33,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
+}
+.navbar .container{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+place-content: space-between;
+
 }
