@@ -71,14 +71,24 @@ section {
   line-height: 1.em;
   margin-top: .2em;
 }
-
-.left-col .primary-cta {
-  background: var(--primary-color);
+section.features-section {
+  background: #20272e;
   color: white;
-  text-decoration: none;
-  padding: .6em 1.3em;
-  font-size: 1.4em;
-  border-radius: 5em;
-  font-weight: bold;
-  display: inline-block;
 }
+
+ul.features-list {
+  margin: 0;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];  
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
