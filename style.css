@@ -31,9 +31,7 @@ body {
 }
 
 .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
 }
 
@@ -43,6 +41,7 @@ body {
 
 a {
   color: var(--primary-color);
+  text-decoration: none; 
 }
 
 ul {
@@ -51,8 +50,8 @@ ul {
   padding: 0;
 }
 
-section { 
-  padding: auto;
+section {
+  padding: 0;
 }
 
 .hero {
@@ -63,32 +62,34 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(217, 207, 207);
-  letter-spacing: .3em;
+  letter-spacing: 0.3em; 
 }
 
 .left-col h1 {
-  font-size: 2.em;
-  line-height: 1.em;
-  margin-top: .2em;
+  font-size: 2em; 
+  line-height: 1.2em; 
+  margin-top: 0.2em;
 }
-section.features-section {
+
+.features-section {
   background: #20272e;
   color: white;
+  padding: 2em 0; 
 }
 
-ul.features-list {
-  margin: 0;
-  padding-left: .1em;
-  display: -ms-grid;
+.features-list {
   display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];  
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1em; 
+  padding-left: 0.1em;
+  margin: 0;
 }
 
-ul.features-list li {
+.features-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
+
 
