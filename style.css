@@ -41,3 +41,20 @@ display: flex;
 place-content: space-between;
 
 }
+.navbar .mobile-menu{
+  cursor: pointer;
+}
+a{
+  color: #2a2f4b;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0%;
+}
+section{ 
+  padding: auto;
+}
+.hero{
+  text-align: center;
+}
