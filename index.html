@@ -3,70 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menü</title>
+    <title>QR Menü Projesi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo">EDA<span>deneme</span></a>
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" alt="Exit mobile menu"/>
-                <ul class="primary-nav">
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-                <ul class="secondary-nav">
-                    <li><a href="#">Contact</a></li>
-                    <li class="buy-it-cta"><a href="#">Buy it</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <section class="hero">
-        <div class="container">
-            <div class="left-col">
-                
+    <nav class="navbar">
+        <div class="logo">QR Menü</div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#home">Home</a></li>
+            <li class="navbar-item"><a href="#about">About</a></li>
+            <li class="navbar-item"><a href="#services">Services</a></li>
+            <li class="navbar-item"><a href="#contact">Contact</a></li>
+            <li class="navbar-item"><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to My Company</h1>
+            <p>We provide exceptional services to help you succeed in your business.</p>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>My Company has been a leading provider of business solutions for over a decade. Our team of experts is dedicated to delivering innovative solutions that meet your needs.</p>
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <h2>Consulting</h2>
+                    <p>Our consulting services help you strategize and optimize your business processes.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Technology</h2>
+                    <p>We provide cutting-edge technology solutions to keep you ahead of the curve.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Support</h2>
+                    <p>Our support team is available 24/7 to assist you with any issues you may face.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="testimonals-section">
-        <div class="container">
-            <ul class="features-list">
-                <li>Safe Online Shopping</li>
-                <li>To The Location You Want</li>
-                <li>Secure Return Exchange</li> 
-            </ul>
-        </div>
-    </section>
-    <section class="testimonals-section">
-        <div class="container">
-            <ul>
-                <li>
-                    <img src="images/person.jpg" alt="person">
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </blockquote>
-                    <cite>David Stone</cite>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="contact-section"> 
-        <div class="container">
-            <div class="contact-left">
-                <h2>CONTACT</h2>
-                <form action="">
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or would like to learn more about our services, please get in touch with us.</p>
+            <form>
+                <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="your name"/>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your email"/>
-                    <label for="message">Message</label> 
-                    
-                </form>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="blog">
+            <h1>Our Blog</h1>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h2>How to Improve Your Business</h2>
+                    <p>Read our latest tips on how to enhance your business operations and achieve greater success.</p>
+                </div>
+                <div class="blog-post">
+                    <h2>Technology Trends in 2024</h2>
+                    <p>Stay up-to-date with the latest technology trends that are shaping the business world.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>
