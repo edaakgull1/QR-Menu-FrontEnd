@@ -13,19 +13,18 @@ cursor özelliği
       fare imlecinin görünüşünü değiştiren özellik. Detaylı bilgi bu linkte var
       https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor
 
-
 Buraya zaman zaman notlar ve linkler koyacağım
-
-
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+* 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Navbar Stilleri */
 .navbar {
   background-color: #333;
   overflow: hidden;
@@ -64,6 +63,7 @@ body {
   color: black;
 }
 
+/* İçerik Stilleri */
 .content {
   padding: 20px;
 }
@@ -76,6 +76,7 @@ h1 {
   margin-top: 0;
 }
 
+/* Hizmetler Stilleri */
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -90,6 +91,7 @@ h1 {
   background-color: #f9f9f9;
 }
 
+/* İletişim Formu Stilleri */
 .form-group {
   margin-bottom: 15px;
 }
@@ -110,7 +112,7 @@ h1 {
 button {
   padding: 10px 20px;
   background-color: #333;
-  color: white;
+  color: rgb(39, 13, 13);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -120,6 +122,7 @@ button:hover {
   background-color: #555;
 }
 
+/* Blog Post Stilleri */
 .blog-posts {
   display: flex;
   flex-direction: column;
@@ -135,4 +138,71 @@ button:hover {
 
 .blog-post p {
   margin: 5px 0 0;
+}
+
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: #555;
+  background-position: center;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
+}
+
+
+span {
+  color: rgb(110, 10, 10);
+  padding: 5px;
+}
+:root {
+  --primary-color: #333;
+  --secondary-color: #f9f9f9;
+  --font-color: white;
+  --font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-item a {
+  color: var(--font-color);
+}
+
+.service-item {
+  background-color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+.service-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
 }
