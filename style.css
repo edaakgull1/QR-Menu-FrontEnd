@@ -56,6 +56,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: center;
+  border-radius: 60px;
 }
 
 .navbar-item a:hover {
@@ -205,4 +206,48 @@ button {
 
 button:hover {
   background-color: #555;
+}
+.kutu{
+  background-color: #ddd;
+  padding: 20px;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 95px;
+  margin-right: 40px;
+  width: 360px;
+  height: 220px;
+  float: right;
+}
+.kutu p{
+  color: #555;
+} 
+.kutu #button{
+  border: 5px solid;
+  border-color: navy;
+  border-radius: 1px;
+  background-color: navy; 
+  color: white;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+.kutu #button:hover{
+  color:navy ;
+  background-color: white;
+  border: 5px solid;
+  border-color: navy;
+  cursor: pointer;
+}
+  .paragraf-container{
+    display: flex;
+    justify-content: space-between; /*paragrafları eşit aralıklarla yatay yerleştirir.*/
+
+  }
+.paragraf-box{
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  box-sizing: border-box; /* kenarlığı içeriğin dışına çıkmasını önler*/
+  
 }
