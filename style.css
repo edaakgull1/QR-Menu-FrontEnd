@@ -181,7 +181,7 @@ span {
   padding: 5px;
 }
 
-
+/* Anasayfa Box CSS */
 .kutu {
   background-color: #ddd;
   padding: 20px;
@@ -191,7 +191,7 @@ span {
   margin-top: 95px;
   margin-right: 40px;
   width: 360px;
-  height: 220px;
+  height: auto;
   float: right;
 }
 
@@ -225,4 +225,9 @@ span {
   width: 30%;
   padding: 10px;
   border: 1px solid #ccc;
+  margin-top: 30px;
+}
+.paragraf-box p {
+  padding: 30px;
+  margin:30px
 }
