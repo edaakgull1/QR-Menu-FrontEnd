@@ -17,16 +17,26 @@ Buraya zaman zaman notlar ve linkler koyacağım
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-* 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+:root {
+  --primary-color: #333;
+  --secondary-color: #f9f9f9;
+  --font-color: white;
+  --font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* Navbar Stilleri */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+
 .navbar {
-  background-color: #333;
+  background-color: var(--primary-color);
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -35,15 +45,13 @@ body {
 }
 
 .logo {
-  color: white;
+  color: var(--font-color);
   font-size: 24px;
   font-weight: bold;
 }
 
 .navbar-menu {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -52,7 +60,7 @@ body {
 }
 
 .navbar-item a {
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
   display: block;
   text-align: center;
@@ -64,7 +72,7 @@ body {
   color: black;
 }
 
-/* İçerik Stilleri */
+
 .content {
   padding: 20px;
 }
@@ -77,7 +85,7 @@ h1 {
   margin-top: 0;
 }
 
-/* Hizmetler Stilleri */
+
 .services-list {
   display: flex;
   justify-content: space-between;
@@ -89,10 +97,17 @@ h1 {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* İletişim Formu Stilleri */
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -110,20 +125,22 @@ h1 {
   border-radius: 5px;
 }
 
+
 button {
   padding: 10px 20px;
-  background-color: #333;
-  color: rgb(39, 13, 13);
+  background-color: var(--primary-color);
+  color: var(--font-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #555;
 }
 
-/* Blog Post Stilleri */
+
 .blog-posts {
   display: flex;
   flex-direction: column;
@@ -163,54 +180,12 @@ span {
   color: rgb(110, 10, 10);
   padding: 5px;
 }
-:root {
-  --primary-color: #333;
-  --secondary-color: #f9f9f9;
-  --font-color: white;
-  --font-family: 'Roboto', Arial, sans-serif;
-}
 
-body {
-  font-family: var(--font-family);
-}
 
-.navbar {
-  background-color: var(--primary-color);
-}
-
-.navbar-item a {
-  color: var(--font-color);
-}
-
-.service-item {
-  background-color: var(--secondary-color);
-}
-
-button {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-}
-.service-item {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-button {
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #555;
-}
-.kutu{
+.kutu {
   background-color: #ddd;
   padding: 20px;
-  border: 1px;
+  border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin-top: 95px;
@@ -219,35 +194,35 @@ button:hover {
   height: 220px;
   float: right;
 }
-.kutu p{
+
+.kutu p {
   color: #555;
-} 
-.kutu #button{
-  border: 5px solid;
-  border-color: navy;
+}
+
+.kutu #button {
+  border: 5px solid navy;
   border-radius: 1px;
-  background-color: navy; 
+  background-color: navy;
   color: white;
   padding: 5px;
   width: 100px;
   text-align: center;
 }
-.kutu #button:hover{
-  color:navy ;
+
+.kutu #button:hover {
+  color: navy;
   background-color: white;
-  border: 5px solid;
-  border-color: navy;
   cursor: pointer;
 }
-  .paragraf-container{
-    display: flex;
-    justify-content: space-between; /*paragrafları eşit aralıklarla yatay yerleştirir.*/
 
-  }
-.paragraf-box{
+/* Paragraph Container */
+.paragraf-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraf-box {
   width: 30%;
   padding: 10px;
-  border: 1px solid #ccc; 
-  box-sizing: border-box; /* kenarlığı içeriğin dışına çıkmasını önler*/
-  
+  border: 1px solid #ccc;
 }
