@@ -219,15 +219,85 @@ span {
 .paragraf-container {
   display: flex;
   justify-content: space-between;
+
+  border: 1px solid #ccc;
 }
 
 .paragraf-box {
   width: 30%;
   padding: 10px;
-  border: 1px solid #ccc;
   margin-top: 30px;
 }
 .paragraf-box p {
   padding: 30px;
   margin:30px
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 30%; 
+  flex: 1; 
+  background-color: #D6EFD8; 
+  padding: 20px;
+  text-align: center; 
+  margin: 5px; 
+}
+
+.content {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
 }
