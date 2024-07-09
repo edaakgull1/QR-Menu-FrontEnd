@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Menü Projesi</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">QR Menü</div>
@@ -30,9 +32,17 @@
                 <label for="message">Mesajınız*</label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit">Bize Ulaşın</button>
+            <button type="button"  onclick="contactUs()">Bize Ulaşın</button>
+            <p id="success"></p>
         </form>
-         
+
     </div>
 </body>
+<script> 
+function contactUs() {
+    let isim = document.getElementById("name").value;
+    document.getElementById("success").innerHTML += "Mesajın Alındı " + isim;
+    //document.getElementById("success").innerHTML = "Mesajınız alındı";
+}
+</script>
 </html>
