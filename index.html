@@ -10,18 +10,19 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">QR Menü</div>
+    <nav class ="navbar">
+        <div class="logo" id=".logo">QR Menü</div>
         <ul class="navbar-menu">
-            <li class="navbar-item"><a href="index.html">Anasayfa</a></li>
-            <li class="navbar-item"><a href="about.html">Hakkımızda</a></li>
-            <li class="navbar-item"><a href="pricing.html">Ücretlendirme</a></li>
-            <li class="navbar-item"><a href="contact.html">Bize Ulaşın</a></li>
+            <li class="navbar-item"><a href="index.html" class="nav-item-a">Anasayfa</a></li>
+            <li class="navbar-item"><a href="about.html" class="nav-item-a">Hakkımızda</a></li>
+            <li class="navbar-item"><a href="pricing.html"class="nav-item-a">Ücretlendirme</a></li>
+            <li class="navbar-item"><a href="contact.html"class="nav-item-a">Bize Ulaşın</a></li>
+            <li class="navbar-item"><i id="mode" class="fa-solid fa-moon" onclick="changeMode()"></i></li>
         </ul>
     </nav>
     <div class="content">
         <div class="kutu">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nobis accusantium dolorem numquam. Quam
+            <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nobis accusantium dolorem numquam. Quam
                 asperiores dignissimos ut aliquam fuga, neque consequatur? Iste est labore consequatur. Temporibus ipsam
                 veritatis sit iure.</p>
             <div id="button">Teklif Al</div>
@@ -29,5 +30,56 @@
     </div>
    
 </body>
+<script src="https://kit.fontawesome.com/6f38a4ace7.js" crossorigin="anonymous"></script>
+<script>
+    /* js ile class bilgisine müdahale 
+    <i class="fa-solid fa-sun"></i>
+    let value = document.getElementById("mode").className;
+    */
+   //let elementozellikleri = document.getElementById("mode");
 
+
+   
+   
+   function changeMode(){
+    let value = document.getElementById("mode").className;
+   // value = i etiketimin güncel class ismi
+
+    const element = document.getElementById("mode");
+    // element değişkeni oluşturdum. id değeri mode olan elementimin özelliklerini element değişkenime attım.
+    const logoElement = document.querySelector(".logo");
+
+    if( value =="fa-solid fa-moon" ){//gündüz
+        element.classList.remove("fa-moon");
+        element.classList.add("fa-sun");
+        const myNavbar = document.getElementsByClassName("navbar");
+        myNavbar[0].style.backgroundColor = "#4c4949";
+        //myPage[0].style.color = "#4c4949";
+        const myNavbarList = document.getElementsByClassName("nav-item-a");
+        for( let i = 0 ; i < myNavbarList.length; i++){
+            myNavbarList[i].style.color ="#ddcccc";
+         
+        }
+        logoElement.style.color="#ddcccc";
+
+    }else if(value == "fa-solid fa-sun"){ //gündüz moduna geçiş
+        element.classList.remove("fa-sun");
+        element.classList.add("fa-moon");
+       const myNavbar = document.getElementsByClassName("navbar");
+       myNavbar[0].style.backgroundColor = "#ddcccc";
+       //myPage[0].style.color = "#ddcccc";
+       const myNavbarList = document.getElementsByClassName("nav-item-a");
+        for( let i = 0 ; i < myNavbarList.length; i++){
+            myNavbarList[i].style.color ="#4c4949";
+         
+        }
+        logoElement.style.color="#4c4949";
+
+    }
+   }
+      document.getElementById("p1").style.color = "#677D6A";
+      document.getElementById("p1").style.fontFamily = "Ariel";
+      document.getElementById("p1").style.fontSize = "Large";
+
+</script>
 </html>

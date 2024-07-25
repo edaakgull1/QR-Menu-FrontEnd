@@ -14,13 +14,16 @@ cursor özelliği
       https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor
 
 Buraya zaman zaman notlar ve linkler koyacağım
+
+--primary-color: #333;
+  --secondary-color: #f9f9f9;
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #333;
+  --primary-color: #ddcccc ;
   --secondary-color: #f9f9f9;
-  --font-color: white;
+  --font-color: rgb(65, 65, 65);
   --font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -36,7 +39,7 @@ body {
 
 
 .navbar {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* burası */
   overflow: hidden;
   display: flex;
   justify-content: space-between;
