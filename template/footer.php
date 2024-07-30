@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menü Projesi</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <nav class ="navbar">
-        <div class="logo" id=".logo">QR Menü</div>
-        <ul class="navbar-menu">
-            <li class="navbar-item"><a href="index.html" class="nav-item-a">Anasayfa</a></li>
-            <li class="navbar-item"><a href="about.html" class="nav-item-a">Hakkımızda</a></li>
-            <li class="navbar-item"><a href="pricing.html"class="nav-item-a">Ücretlendirme</a></li>
-            <li class="navbar-item"><a href="contact.html"class="nav-item-a">Bize Ulaşın</a></li>
-            <li class="navbar-item"><i id="mode" class="fa-solid fa-moon" onclick="changeMode()"></i></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <div class="kutu">
-            <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nobis accusantium dolorem numquam. Quam
-                asperiores dignissimos ut aliquam fuga, neque consequatur? Iste est labore consequatur. Temporibus ipsam
-                veritatis sit iure.</p>
-            <div id="button">Teklif Al</div>
-        </div>
-    </div>
-   
 </body>
 <script src="https://kit.fontawesome.com/6f38a4ace7.js" crossorigin="anonymous"></script>
 <script>

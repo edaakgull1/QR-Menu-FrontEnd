@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menü Projesi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">QR Menü</div>
-        <ul class="navbar-menu">
-            <li class="navbar-item"><a href="index.html">Anasayfa</a></li>
-            <li class="navbar-item"><a href="about.html">Hakkımızda</a></li>
-            <li class="navbar-item"><a href="pricing.html">Ücretlendirme</a></li>
-            <li class="navbar-item"><a href="contact.html">Bize Ulaşın</a></li>
-        </ul>
-    </nav>
+    <?php include "template/header.php" ?>
     <div class="content container">
         <div class="box">
             <h2 class="box-header">Price</h2>
@@ -33,5 +16,4 @@
             <h4>1000₺</h4>
         </div>
     </div>
-</body>
-</html>
+<?php include "template/footer.php" ?>
